@@ -1,0 +1,168 @@
+@import 'https://fonts.googleapis.com/css?family=Athiti';
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html, body {height: 100%}
+::selection {background: tomato}
+
+h1,p {cursor: default}
+
+body {
+  color: #fff;
+  background: rgba(0,0,0, 0.05);
+  font-family: Athiti, "Open Sans", sans-serif;
+  font-size: 30px;
+  position: relative;
+}
+
+header {
+  background: steelblue;
+  height: 100%;
+  text-align: center;
+/*  display: inline-block;  to fix top margin from pushing whole header */
+  width: 100%;
+  position: relative;
+}
+
+header h1 {
+  font-size: 2.3em;
+  line-height: 1;
+  /* border: 2px solid #fff; */
+  margin: 0 auto;
+  display: inline-block;
+  padding-top: 1em;
+  padding-bottom: 15px;
+  letter-spacing: 5px;
+  border-bottom: 4px solid;
+  border-radius: 4px;
+}
+
+header p, #rules {
+  font-size: .55em;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 3em;
+  line-height: 1.5;
+}
+
+header ol {text-align: left}
+
+ol li {
+  list-style: decimal;
+  margin-left: 10%;
+}
+
+.answer {
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  border: 0;
+  border-bottom: 2px solid #fff;
+  height: 35px;
+  text-align: center;
+  border-radius: 0 0 2px 2px;
+  transition: background 0.3s;
+  width: 100px;
+}
+.answer:focus {background: rgba(255,255,255,0.3)}
+
+.success {color: lightgreen}
+.fail {color: red}
+
+#resultBool {display: none}
+
+#score {
+  text-align: left;
+  font-size: .5em;
+  padding: 10px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+@media only screen and (min-width: 570px) {
+  #rules {
+    
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* btn from my codepen */
+
+.btn {
+  display: none;
+  color: #fff;
+  background: 0;
+  margin: 10px 0;
+  border: 1.5px solid #fff;
+  font: 0.5em Athiti, sans-serif;
+  cursor: pointer;
+  padding: 8px 25px;
+  border-radius: 1vh;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all .2s ease-in-out .1s;
+  transition: all .2s ease-in-out .1s;
+  z-index: 0;
+  margin: 2% auto;
+}
+
+.btn:before, .btn:after {
+  background: #fff;
+  content: '';
+  width: 410px;
+  height: 500px;
+  position: absolute;
+  top: -350%;
+  z-index: -1;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+.btn:before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  left: -320%;
+}
+.btn:after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  right: -275%;
+  top: -675%;
+}
+.btn:hover:before {left: 10%}
+.btn:hover:after {right: 10%}
+.btn:hover {color: steelblue}
+.btn:active {margin-top: 2px}
+
+
+
+input {
+  
+}
+
+#resultBool {
+  font-weight: bold;
+  font-size: .6em;
+}

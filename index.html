@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="utf8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Matha.io</title>
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" media="screen" href="css/style.css">
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  </head>
+    
+  <body>
+    <header>
+      <h1>Matha.io</h1>
+        
+      <ol id="rules">
+        <b>Rules:</b>
+        <li>Don't cheat.</li>
+        <li>If its a division, round your answer. (i.e 0.25 = 0, 0.5 = 1)</li>
+        <li>If dividing by zero, say "infinity".</li>
+        <li>Don't cheat.</li>
+      </ol>
+        
+      <p id="result"></p>
+      <form autocomplete="off">
+          <input class="answer" type="text"></input>
+      </form>
+      <p id="resultBool"></p>
+      <button class="btn">See More</button>
+  
+      <h4 id="score">Score: 0</h4>
+    </header>
+    
+    <script src="js/core.js"></script>
+  </body>
+</html>
