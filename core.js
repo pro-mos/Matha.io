@@ -1,6 +1,6 @@
-var invert = false;
-var score = 0; var number1; var number2;
-var sign; var result; var answer;
+var invert = false,
+  score = 0, number1, number2,
+  sign, result, answer;
 
 $("document").ready(function() {
 var resultTxt = $("#result");
