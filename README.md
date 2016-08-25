@@ -1,2 +1,2 @@
 # Matha.io
-New challenging basic math game.
+New simple and basic math game.
