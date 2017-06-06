@@ -1,2 +1,2 @@
 # Matha.io
-New simple and basic math game.
+Unfinished Math quiz game.
